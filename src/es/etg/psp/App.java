@@ -22,7 +22,7 @@ public class App {
         StringBuilder outBuilder = new StringBuilder();
         String line;
         try {
-            Process proc = Runtime.getRuntime().exec(COMMANDO);
+            Process proc = Runtime.getRuntime().exec(comando);
             BufferedReader out = new BufferedReader(new InputStreamReader(proc.getInputStream()));
             while ((line = out.readLine()) != null) {
                 outBuilder.append(line).append(System.lineSeparator());
