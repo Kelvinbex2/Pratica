@@ -30,7 +30,7 @@ public class App {
 
             exitVal = proc.waitFor();
             if (exitVal == 0) {
-                System.out.println(Entrada.ERR_BUENO);
+                //System.out.println(Entrada.ERR_BUENO);
                 System.out.println(outBuilder);
             } else {
                 System.out.println(Entrada.ERR_MALO);
