@@ -8,6 +8,16 @@ public class App {
    
     public static void main(String[] args) throws Exception {
 
+        try {
+            System.out.println(Entrada.MSG_PADRE);
+            ejecutar(COMMANDO);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+       
+    }
+
+    public static int ejecutar(String [] comando){
         int exitVal = 0;
         StringBuilder outBuilder = new StringBuilder();
         String line;
@@ -28,6 +38,8 @@ public class App {
         } catch (IOException | InterruptedException e) {
             System.out.println(e.getMessage());
         }
+
+        return   exitVal;
     }
 
     
